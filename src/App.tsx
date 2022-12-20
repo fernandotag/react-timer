@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './styles/global';
+import defaultTheme from './styles/themes/default';
 
-export function App() {
-  const [count, setCount] = useState(0)
-
+function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={defaultTheme}>
       <h1>Timer App</h1>
-    </div>
-  )
+      <GlobalStyle />
+    </ThemeProvider>
+  );
 }
+
+export default App;
