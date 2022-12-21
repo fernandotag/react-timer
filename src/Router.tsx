@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
-import History from './components/History';
-import Home from './components/Home';
-import DefaultLayout from './layouts/DefaultLayout';
+import { Route, Routes } from 'react-router-dom'
+import History from './components/History'
+import Home from './components/Home'
+import DefaultLayout from './layouts/DefaultLayout'
 
 function Router() {
   return (
@@ -11,7 +11,7 @@ function Router() {
         <Route path="/history" element={<History />} />
       </Route>
     </Routes>
-  );
+  )
 }
 
-export default Router;
+export default Router
