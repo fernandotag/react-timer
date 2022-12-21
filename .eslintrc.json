@@ -1,10 +1,3 @@
 {
-    "extends": [
-        "airbnb", 
-        "airbnb-typescript", 
-        "plugin:react/jsx-runtime"
-    ],
-    "parserOptions": {
-        "project": "./tsconfig.json"
-    }
+    "extends": "@rocketseat/eslint-config/react"
 }
